@@ -1,0 +1,15 @@
+---
+title: 'Assignment: R Markdown and Leaflet'
+---
+
+### May 23, 2021
+
+
+```{r Interactive Map, echo=F, eval=T}
+
+library(leaflet)
+
+leaflet() %>% addTiles() %>% addMarkers(lat=c(40.7536,40.7309,40.7587,40.7480),
+                                               lng=c(-73.9832,-73.9973,-73.9787,-74.0048),
+                                               popup=c("Bryant Park","Washington Square Park","Rockefeller Center","The High Line"))
+```
